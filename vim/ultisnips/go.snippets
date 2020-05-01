@@ -1,0 +1,27 @@
+# Snippets for Go
+priority -10
+
+# fmt.Println "..."
+snippet here "fmt.Println(...)"
+fmt.Println("\n==HERE==")
+endsnippet
+
+# fmt.Printf + pretty.Formatter
+snippet dmp "fmt.Printf(..., pretty.Formatter(...))"
+fmt.Printf("dump: % #v\n", pretty.Formatter(${0}))
+endsnippet
+
+# fmt.Printf "%s", ...
+snippet 1dmp "fmt.Printf( %s, ...)"
+fmt.Printf("${0}: %s\n", ${1})
+endsnippet
+
+# fmt.Printf "%s", ...
+snippet 2dmp "fmt.Printf( %s, %s, ...)"
+fmt.Printf("${0}:%s, ${1}:%s\n", ${2}, ${3})
+endsnippet
+
+# fmt.Printf "%s", ...
+snippet stf "fmt.Printf( %s, ...)"
+fmt.Printf("stf: %s\n", ${0})
+endsnippet
