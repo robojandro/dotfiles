@@ -7,6 +7,9 @@ Plug 'fatih/vim-go'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
+" Will still need to do :CocInstall coc-go to get working language reference
+" pop-ups
+
 " if vim-go expected behaviours aren't executing, or not found, ie:
 "   vim-go: could not find 'goimports'.
 " might need to:
